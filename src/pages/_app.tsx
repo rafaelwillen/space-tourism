@@ -16,7 +16,7 @@ const bodyCondensedFont = Barlow_Condensed({
 const bodyFont = Barlow({
   variable: "--font-barlow",
   subsets: ["latin"],
-  weight: "400",
+  weight: ["400", "700"],
 });
 
 export default function App({ Component, pageProps }: AppProps) {
