@@ -32,7 +32,7 @@ export default function RootLayout({
           heading.variable,
           body.variable,
           body.className,
-          "bg-black text-primary p-6"
+          "bg-black text-primary p-6 tablet:pt-0 tablet:pr-0 tablet:pl-14"
         )}
       >
         <Header />
