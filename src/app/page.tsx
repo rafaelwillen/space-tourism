@@ -20,9 +20,10 @@ export default function Home() {
         </p>
       </div>
       <Link
-        className="flex justify-center items-center mx-auto w-36 h-36 bg-white text-black rounded-full font-heading text-xl uppercase tablet:text-heading-4 tablet:w-60 tablet:h-60 desktop:w-72 desktop:h-72"
+        className="flex justify-center items-center mx-auto w-36 h-36 bg-white text-black rounded-full font-heading text-xl uppercase relative group tablet:text-heading-4 tablet:w-60 tablet:h-60 desktop:w-72 desktop:h-72"
         href="/explore"
       >
+        <div className="absolute inset-0 w-full h-full rounded-full bg-white/[0.1] group-hover:scale-150 transition duration-300 -z-10" />
         Explore
       </Link>
     </main>
