@@ -1,8 +1,7 @@
-import { IconHamburger, Logo } from "@/assets";
+import Header from "@/components/Header";
 import classNames from "classnames";
 import type { Metadata } from "next";
 import { Barlow_Condensed, Bellefair } from "next/font/google";
-import Image from "next/image";
 import "./globals.css";
 
 const heading = Bellefair({
@@ -11,7 +10,7 @@ const heading = Bellefair({
   variable: "--heading",
 });
 const body = Barlow_Condensed({
-  weight: "400",
+  weight: ["400", "700"],
   subsets: ["latin"],
   variable: "--body",
 });
@@ -36,14 +35,7 @@ export default function RootLayout({
           "bg-black text-primary p-6"
         )}
       >
-        <header>
-          <nav>
-            <ul>
-              <Image src={Logo} alt="Space tourism logo" />
-              <Image src={IconHamburger} alt="Open nav menu" />
-            </ul>
-          </nav>
-        </header>
+        <Header />
         {children}
       </body>
     </html>
