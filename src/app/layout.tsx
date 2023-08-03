@@ -1,6 +1,8 @@
+import { IconHamburger, Logo } from "@/assets";
 import classNames from "classnames";
 import type { Metadata } from "next";
 import { Barlow_Condensed, Bellefair } from "next/font/google";
+import Image from "next/image";
 import "./globals.css";
 
 const heading = Bellefair({
@@ -31,9 +33,17 @@ export default function RootLayout({
           heading.variable,
           body.variable,
           body.className,
-          "bg-black text-primary"
+          "bg-black text-primary p-6"
         )}
       >
+        <header>
+          <nav>
+            <ul>
+              <Image src={Logo} alt="Space tourism logo" />
+              <Image src={IconHamburger} alt="Open nav menu" />
+            </ul>
+          </nav>
+        </header>
         {children}
       </body>
     </html>
