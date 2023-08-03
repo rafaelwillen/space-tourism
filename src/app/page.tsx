@@ -1,8 +1,10 @@
+import HomeBackground from "@/components/HomeBackground";
 import Link from "next/link";
 
 export default function Home() {
   return (
     <main className="desktop:flex justify-between items-end desktop:mt-60">
+      <HomeBackground />
       <div className="mt-12 mb-20 text-center uppercase space-y-4 max-w-[444px] mx-auto tablet:mt-[106px] tablet:mb-40 tablet:space-y-6 desktop:my-0 desktop:text-left">
         <p className=" text-nav tracking-nav tablet:text-xl tablet:tracking-[3.375px] desktop:text-subheading-1 desktop:tracking-heading-5">
           So, you want to travel to
