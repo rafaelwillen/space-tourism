@@ -13,7 +13,7 @@ export default function NavbarItem({ href, name, index }: Props) {
     <li>
       <Link
         className={classNames(
-          "block h-full text-white text-nav tracking-[2.36px] uppercase border-b-[3px] border-white border-opacity-0 hover:border-opacity-50",
+          "block h-full text-white text-nav tracking-[2.36px] uppercase border-b-3 border-white border-opacity-0 hover:border-opacity-50",
           pathname === href && "border-opacity-100 hover:border-opacity-100"
         )}
         href={href}

@@ -28,6 +28,9 @@ module.exports = {
         nav: "1rem",
         body: "1.125rem",
       },
+      borderWidth: {
+        3: "3px",
+      },
       letterSpacing: {
         "heading-5": "4.75px",
         "subheading-2": "2.35px",
